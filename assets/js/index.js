@@ -32,7 +32,7 @@ function renderAvatar(user) {
   let name = user.nickname || user.username
   $('#welcome').html('欢迎 &nbsp' + name)
   if (user.user_pic === null) {
-    let first = user.username[0].toUpperCase()
+    let first = name[0].toUpperCase()
     $('.text-avatar').html(first).show()
     $('.layui-nav-img').hide()
   } else {
